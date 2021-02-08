@@ -43,12 +43,12 @@ namespace HEICtoJPG
 				flag = true;
 			}
 
-			if (args.Length == 3 && args[0].Contains("/target") &&  args[1] == "/jpg")
+			if (args.Length == 2 && args[0].Contains("/target") &&  args[1] == "/jpg")
 			{
 				sourcePath = Directory.GetCurrentDirectory();
 				targetPath = GetPath(args[0]);
 			}
-			if (args.Length == 3 && args[0].Contains("/target") && args[1] == "/jpg" && args[1] == "/delete")
+			if (args.Length == 3 && args[0].Contains("/target") && args[1] == "/jpg" && args[2] == "/delete")
 			{
 				sourcePath = Directory.GetCurrentDirectory();
 				targetPath = GetPath(args[0]);

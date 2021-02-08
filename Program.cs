@@ -11,7 +11,7 @@ namespace HEICtoJPG
 {
 	class Program
 	{
-		public static string imageType;
+		//public static string imageType;
 		static void Main(string[] args)
 		{
 
@@ -52,8 +52,9 @@ namespace HEICtoJPG
 			{
 				sourcePath = Directory.GetCurrentDirectory();
 				targetPath = GetPath(args[0]);
+				flag = true;
 			}
-			imageType = args[0];
+			//imageType = args[0];
 			filesInFolder = Directory.GetFiles(sourcePath);
 			foreach (var file in filesInFolder)
 			{
